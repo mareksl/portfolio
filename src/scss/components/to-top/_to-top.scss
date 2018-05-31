@@ -1,0 +1,28 @@
+.to-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: $primary-color;
+  color: $secondary-color;
+  bottom: 2rem;
+  right: 2rem;
+  border: 1rem solid $secondary-color;
+  font-size: 2rem;
+  mix-blend-mode: exclusion;
+  z-index: 0;
+
+  &:hover,
+  &:focus {
+    filter: invert(100%);
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .to-top {
+    right: 4rem;
+    bottom: 4rem;
+  }
+}
