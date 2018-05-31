@@ -21,6 +21,11 @@ const copyHtml = () =>
     .src(`${sourceDir}/**/*.html`)
     .pipe(gulp.dest(distDir, { base: sourceDir }));
 
+const copyFonts = () =>
+  gulp
+    .src(`${sourceDir}/fonts/**/*.*`)
+    .pipe(gulp.dest(`${distDir}/fonts`, { base: sourceDir }));
+
 const copyImages = () =>
   gulp
     .src(`${sourceDir}/img/**/*.*`)
@@ -31,7 +36,13 @@ const copyImages = () =>
 
 const runClean = () => del([distDir]);
 
-const runBuild = gulp.series(runClean, runSass, copyHtml, copyImages);
+const runBuild = gulp.series(
+  runClean,
+  runSass,
+  copyHtml,
+  copyFonts,
+  copyImages
+);
 
 const reload = done => {
   bs.reload();
