@@ -3,5 +3,7 @@
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   overflow-x: hidden;
+  z-index: 0;
 }

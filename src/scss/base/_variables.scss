@@ -3,3 +3,64 @@ $secondary-color: white;
 $gradient-color-1: rgb(45, 253, 118);
 $gradient-color-2: rgb(34, 193, 195);
 $gradient-color-3: rgb(201, 0, 201);
+
+@mixin section {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  &:after {
+    display: block;
+    content: '';
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+@mixin light-section {
+  @include section;
+  background-color: $secondary-color;
+  &:after {
+    background-color: $primary-color;
+  }
+}
+
+@mixin dark-section {
+  @include section;
+  background-color: $primary-color;
+  color: $secondary-color;
+
+  &:after {
+    background-color: $secondary-color;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  66% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

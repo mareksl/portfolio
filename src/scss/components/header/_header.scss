@@ -11,7 +11,7 @@
 
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  z-index: 1;
+  background-color: rgba($primary-color, 0.8);
 
   &:before {
     content: '';
@@ -22,9 +22,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-blend-mode: overlay;
     background: url('../img/background.jpg');
-    background-color: rgba($primary-color, 0.8);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,7 +50,6 @@
   color: $secondary-color;
   font-size: 1rem;
 }
-
 .header__nav {
   color: $secondary-color;
 }
@@ -109,16 +106,5 @@
 @media screen and (min-width: 840px) {
   .header__title {
     font-weight: 100;
-  }
-}
-@keyframes background {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
