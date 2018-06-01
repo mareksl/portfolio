@@ -1,10 +1,12 @@
 .footer {
+  position: relative;
   background-color: $primary-color;
   padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 6rem;
+  z-index: -2;
 }
 
 .footer__text {
