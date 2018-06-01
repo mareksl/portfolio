@@ -80,7 +80,7 @@
     transform: translateX(0);
   }
 }
-@media screen and (min-width: 1190px) {
+@media screen and (min-width: $breakpoint-xl) {
   .header {
     justify-content: center;
   }
@@ -89,7 +89,7 @@
     padding-right: 8rem;
   }
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: $breakpoint-sm) {
   .header__title {
     font-weight: 200;
   }
@@ -98,12 +98,12 @@
     font-weight: 100;
   }
 }
-@media screen and (min-width: 620px) {
+@media screen and (min-width: $breakpoint-md) {
   .nav__link {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $breakpoint-lg) {
   .header__title {
     font-weight: 100;
   }

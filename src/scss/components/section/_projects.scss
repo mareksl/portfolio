@@ -1,3 +1,90 @@
 .projects {
   @include dark-section;
 }
+
+.project-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.project-list__item {
+  color: $primary-color;
+  display: flex;
+  flex-flow: column;
+  background-color: $secondary-color;
+  flex: 0 1 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.project-item__heading {
+  font-size: 1rem;
+}
+.project-item__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.project-item__link {
+  text-align: center;
+  margin: 0 0.5rem;
+  &:before {
+    background: $primary-color;
+  }
+}
+
+.project-item__image-wrapper {
+  flex: 0 1 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rem solid $primary-color;
+}
+
+.project-item__image {
+  max-width: 100%;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .project-list__item {
+    flex-basis: calc(50% - 2rem);
+  }
+  .project-item__heading {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .project-item__heading {
+    font-size: 1.5rem;
+  }
+  .project-item__links {
+    margin-top: 1.5rem;
+  }
+  .project-item__link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .project-list__item {
+    flex-basis: calc(33% - 2rem);
+    padding: 2rem;
+  }
+  .project-item__heading {
+    font-size: 2rem;
+  }
+  .project-item__links {
+    margin-top: 2rem;
+  }
+  .project-item__link {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 0 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 .section {
   padding: 2rem;
 }
-@media screen and (min-width: 620px) {
+@media screen and (min-width: $breakpoint-md) {
   .section {
     padding: 4rem;
   }
