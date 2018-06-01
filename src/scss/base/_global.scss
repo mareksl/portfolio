@@ -12,10 +12,10 @@ body {
   width: 50%;
   height: auto;
 }
-.arrow--left {  
+.arrow--left {
   transform: rotate(-90deg);
 }
-.arrow--right {  
+.arrow--right {
   transform: rotate(90deg);
 }
 
@@ -34,6 +34,7 @@ body {
     height: 1px;
     transform: translateX(-100%);
     opacity: 0.8;
+    background-color: $primary-color;
   }
   &:focus {
     outline: none;
@@ -42,4 +43,17 @@ body {
   &:focus:before {
     transform: translateX(0);
   }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
