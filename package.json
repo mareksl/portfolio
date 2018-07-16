@@ -14,7 +14,8 @@
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
-    "dev": "gulp serve"
+    "dev": "gulp serve",
+    "build": "gulp build"
   },
   "dependencies": {}
 }
