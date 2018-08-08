@@ -31,10 +31,9 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 1px;
-    transform: translateX(-100%);
-    opacity: 0.8;
-    background-color: $primary-color;
+    height: 0.5rem;
+    transform: translateY(90%);
+    @include gradient-background;
   }
   &:focus {
     outline: none;

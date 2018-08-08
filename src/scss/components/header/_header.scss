@@ -33,18 +33,10 @@
   font-size: 12vw;
   color: $secondary-color;
 
-  background: $gradient-color-1;
-  background: linear-gradient(
-    45deg,
-    $gradient-color-1 0%,
-    $gradient-color-2 50%,
-    $gradient-color-3 100%
-  );
-  background-size: 400%;
+  @include gradient-background;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: background 20s ease-in infinite;
 }
 .header__subtitle {
   color: $secondary-color;
