@@ -73,11 +73,8 @@
 
 @media screen and (min-width: $breakpoint-xl) {
   .project-list__item {
-    flex-basis: calc(33% - 2rem);
+    flex-basis: calc(25% - 2rem);
     padding: 2rem;
-  }
-  .project-item__heading {
-    font-size: 2rem;
   }
   .project-item__links {
     margin-top: 2rem;
