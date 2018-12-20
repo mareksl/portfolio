@@ -1,158 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marek Sładczyk | Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header" id="home">
-        <div class="header__heading">
-            <h1 class="header__title">Marek Sładczyk
-
-            </h1>
-            <p class="header__subtitle">Front-End Developer</p>
-        </div>
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a class="nav__link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <div class="header__heading">
+        <h1 class="header__title">Marek Sładczyk</h1>
+        <p class="header__subtitle">Front-End Developer</p>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="section about" id="about">
-            <div class="section__inner">
-                <h2>About Me</h2>
-                <p class="about__paragraph">Hello World! I am a
-                    <em>Front-End Developer</em> from Trójmiasto, Poland. After studying
-                    <em>Applied Linguistics</em>, I decided to broaden my education and pursue a career in IT, starting with
-                    Front-End and JavaScript Development. I have worked hard in my own time to learn
-                    <em>HTML, CSS and JavaScript</em> using various resources such as online courses, books and tutorials, actively
-                    following and seeking support from experienced developers (e.g. on Facebook groups) and practising programming
-                    by working on projects, both commercial and private. I am always actively learning and expanding my knowledge,
-                    attending meetups and following current trends in Front-End and JavaScript Development.
-                </p>
-                <p class="about__paragraph">I do my best to craft clean, understandable and bug-free code, adhering to standards and best practices.
-                    I enjoy building websites with HTML and CSS, and
-                    <span class="about__emoji" role="img" aria-label="Love">❤</span> writing JavaScript. My frameworks of choice are
-                    <em>Angular</em> and
-                    <em>Vue</em>, but I focus on perfecting my
-                    <em>Vanilla JS</em> skills, as with these, learning a new framework is not hard. Recently, I have also started
-                    using
-                    <em>Node.js</em> on the Backend and <em>Python</em> for Data Analysis.
-                </p>
-                <p class="about__paragraph">I enjoy learning new languages (both programming and human
-                    <span role="img" aria-label="Wink">😉</span>), getting to know new cultures, and learning new things.
-                    <a class="link about__link" href="https://mareksl.github.io/cv">See my full CV on GitHub.</a>
-                </p>
-            </div>
-        </section>
-        <section class="section projects" id="projects">
-            <div class="section__inner">
-                <h2>Projects</h2>
-                <ul class="project-list">
-                    <li class="project-list__item">
-                        <h3 class="project-item__heading">Fund Name Shortener</h3>
-                        <div class="project-item__image-wrapper">
-                            <img class="project-item__image" src="img/shortener.jpg" alt="Fund Name Shortener Screenshot">
-                        </div>
-                        <ul class="project-item__links">
-                            <li>
-                                <a class="link project-item__link" href="https://mareksl.github.io/nameShortener/">Live</a>
-                            </li>
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/nameShortener">Code</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="project-list__item">
-                        <h3 class="project-item__heading">Majestic Website</h3>
-                        <div class="project-item__image-wrapper">
-                            <img class="project-item__image" src="img/majestic.jpg" alt="Majestic Website Screenshot">
-                        </div>
-                        <ul class="project-item__links">
-                            <li>
-                                <a class="link project-item__link" href="http://majestic.art.pl/">Live</a>
-                            </li>
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/majestic">Code</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="project-list__item">
-                        <h3 class="project-item__heading">Band Website &amp; REST API</h3>
-                        <div class="project-item__image-wrapper">
-                            <img class="project-item__image" src="img/band.jpg" alt="Band Page Screenshot">
-                        </div>
-                        <ul class="project-item__links">
-                            <li>
-                                <a class="link project-item__link" href="https://mareksl-band-demo.tk/">Live</a>
-                            </li>
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/band-website">Website Code</a>
-                            </li>
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/ts-backend-playground">API Code</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="project-list__item">
-                        <h3 class="project-item__heading">LFA Progress Tracker</h3>
-                        <div class="project-item__image-wrapper">
-                            <img class="project-item__image" src="img/lfatracker.jpg" alt="LFA Progress Tracker Screenshot">
-                        </div>
-                        <ul class="project-item__links">
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/lfa-tracker-frontend">Frontend Code</a>
-                            </li>
-                            <li>
-                                <a class="link project-item__link" href="https://github.com/mareksl/lfa-tracker-backend">Backend Code</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section contact" id="contact">
-            <div class="section__inner">
-                <h2>Contact</h2>
-                <ul class="contact-list">
-                    <li class="contact-list__item">
-                        <a class="contact-list__link" href="https://linkedin.com/in/mareksl">LinkedIn</a>
-                    </li>
-                    <li class="contact-list__item">
-                        <a class="contact-list__link" href="https://github.com/mareksl">GitHub</a>
-                    </li>
-                    <li class="contact-list__item">
-                        <a class="contact-list__link" href="https://mareksl.github.io/cv">Full CV</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <section class="section about" id="about">
+        <div class="section__inner">
+          <h2>About Me</h2>
+          <p class="about__paragraph">
+            Hello World! I am a <em>Front-End Developer</em> from Trójmiasto,
+            Poland. After studying <em>Applied Linguistics</em>, I decided to
+            broaden my education and pursue a career in IT, starting with
+            Front-End and JavaScript Development. I have worked hard in my own
+            time to learn <em>HTML, CSS and JavaScript</em> using various
+            resources such as online courses, books and tutorials, actively
+            following and seeking support from experienced developers (e.g. on
+            Facebook groups) and practising programming by working on projects,
+            both commercial and private. I am always actively learning and
+            expanding my knowledge, attending meetups and following current
+            trends in Front-End and JavaScript Development.
+          </p>
+          <p class="about__paragraph">
+            I do my best to craft clean, understandable and bug-free code,
+            adhering to standards and best practices. I enjoy building websites
+            with HTML and CSS, and
+            <span class="about__emoji" role="img" aria-label="Love">❤</span>
+            writing JavaScript. My frameworks of choice are <em>Angular</em> and
+            <em>Vue</em>, but I focus on perfecting my
+            <em>Vanilla JS</em> skills, as with these, learning a new framework
+            is not hard. Recently, I have also started using <em>Node.js</em> on
+            the Backend and <em>Python</em> for Data Analysis.
+          </p>
+          <p class="about__paragraph">
+            I enjoy learning new languages (both programming and human
+            <span role="img" aria-label="Wink">😉</span>), getting to know new
+            cultures, and learning new things.
+            <a class="link about__link" href="https://mareksl.github.io/cv"
+              >See my full CV on GitHub.</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="section projects" id="projects">
+        <div class="section__inner">
+          <h2>Projects</h2>
+          <ul class="project-list">
+            <li class="project-list__item">
+              <h3 class="project-item__heading">LFA Progress Tracker</h3>
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="img/lfatracker.jpg"
+                  alt="LFA Progress Tracker Screenshot"
+                />
+              </div>
+              <ul class="project-item__links">
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/lfa-tracker-frontend"
+                    >Frontend Code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/lfa-tracker-backend"
+                    >Backend Code</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="project-list__item">
+              <h3 class="project-item__heading">Fund Name Shortener</h3>
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="img/shortener.jpg"
+                  alt="Fund Name Shortener Screenshot"
+                />
+              </div>
+              <ul class="project-item__links">
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://mareksl.github.io/nameShortener/"
+                    >Live</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/nameShortener"
+                    >Code</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="project-list__item">
+              <h3 class="project-item__heading">Majestic Website</h3>
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="img/majestic.jpg"
+                  alt="Majestic Website Screenshot"
+                />
+              </div>
+              <ul class="project-item__links">
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="http://majestic.art.pl/"
+                    >Live</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/majestic"
+                    >Code</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="project-list__item">
+              <h3 class="project-item__heading">Band Website &amp; REST API</h3>
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="img/band.jpg"
+                  alt="Band Page Screenshot"
+                />
+              </div>
+              <ul class="project-item__links">
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://mareksl-band-demo.tk/"
+                    >Live</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/band-website"
+                    >Website Code</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link project-item__link"
+                    href="https://github.com/mareksl/ts-backend-playground"
+                    >API Code</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="section__inner">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a
+                class="contact-list__link"
+                href="https://linkedin.com/in/mareksl"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link" href="https://github.com/mareksl"
+                >GitHub</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link" href="https://mareksl.github.io/cv"
+                >Full CV</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <small class="footer__text">Marek Sładczyk 2018</small>
+      <small class="footer__text">Marek Sładczyk 2018</small>
     </footer>
     <a class="to-top" href="#home">
-        <svg role="img" class="arrow" viewBox="0 0 64 64">
-            <title id="upArrowID">Up</title>
-            <path fill="white" d="M.006493 59.99432L32.000001 4.005681 63.993509 59.99432H.006493z" />
-            <span class="visuallyhidden">Scroll to top</span>
-        </svg>
+      <svg role="img" class="arrow" viewBox="0 0 64 64">
+        <title id="upArrowID">Up</title>
+        <path
+          fill="white"
+          d="M.006493 59.99432L32.000001 4.005681 63.993509 59.99432H.006493z"
+        />
+        <span class="visuallyhidden">Scroll to top</span>
+      </svg>
     </a>
-</body>
-
+  </body>
 </html>
