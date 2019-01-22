@@ -3,21 +3,45 @@
 }
 
 .project-list {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .project-list__item {
+  position: relative;
   color: $primary-color;
   display: flex;
   flex-flow: column;
-  background-color: $secondary-color;
   flex: 0 1 100%;
   justify-content: flex-start;
-  overflow: hidden;
   padding: 2rem;
   margin: 1rem 0;
+  background-color: $secondary-color;
+
+  &:before {
+    content: '';
+    @include gradient-background;
+    position: absolute;
+    top: 0.25rem;
+    bottom: -0.25rem;
+    right: -0.25rem;
+    left: 0.25rem;
+    z-index: -1;
+    transition: 0.4s;
+  }
+
+  &:hover {
+    &:before {
+      top: 0.5rem;
+      bottom: -0.5rem;
+      right: -0.5rem;
+      left: 0.5rem;
+      transform: rotate(1deg);
+    }
+  }
 }
 
 .project-item__heading {
