@@ -28,6 +28,11 @@ const copyHtml = () =>
     .src(`${sourceDir}/**/*.html`)
     .pipe(gulp.dest(distDir, { base: sourceDir }));
 
+const copyJS = () =>
+  gulp
+    .src(`${sourceDir}/js/**/*.js`)
+    .pipe(gulp.dest(`${distDir}/js`, { base: sourceDir }));
+
 const copyFonts = () =>
   gulp
     .src(`${sourceDir}/fonts/**/*.*`)
@@ -47,6 +52,7 @@ const runBuild = gulp.series(
   runClean,
   runSass,
   copyHtml,
+  copyJS,
   copyFonts,
   copyImages
 );
@@ -64,6 +70,7 @@ gulp.task('bs', () => {
   });
   gulp.watch(`${sourceDir}/scss/**/*.scss`, runSass);
   gulp.watch(`${sourceDir}/**/*.html`, gulp.series(copyHtml, reload));
+  gulp.watch(`${sourceDir}/js/**/*.js`, gulp.series(copyJS, reload));
   gulp.watch(`${sourceDir}/img/**/*.*`, gulp.series(copyImages, reload));
 });
 

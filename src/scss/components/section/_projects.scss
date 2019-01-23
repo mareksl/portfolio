@@ -20,25 +20,29 @@
   padding: 2rem;
   margin: 1rem 0;
   background-color: $secondary-color;
-
   &:before {
     content: '';
-    @include gradient-background;
     position: absolute;
-    top: 0.25rem;
-    bottom: -0.25rem;
-    right: -0.25rem;
-    left: 0.25rem;
-    z-index: -1;
+    @include gradient-background;
     transition: 0.4s;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+  }
+}
+
+.project-list__item--in-view {
+  &:before {
+    top: 0.5rem;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    left: 0.5rem;
   }
 
   &:hover {
     &:before {
-      top: 0.5rem;
-      bottom: -0.5rem;
-      right: -0.5rem;
-      left: 0.5rem;
       transform: rotate(1deg);
     }
   }
