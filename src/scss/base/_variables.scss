@@ -12,6 +12,8 @@ $breakpoint-md: 620px;
 $breakpoint-lg: 840px;
 $breakpoint-xl: 1190px;
 
+$transition-duration: 0.4s;
+
 @mixin section {
   min-height: 100vh;
   display: flex;

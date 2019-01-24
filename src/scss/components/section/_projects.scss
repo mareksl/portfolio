@@ -20,16 +20,18 @@
   padding: 2rem;
   margin: 1rem 0;
   background-color: $secondary-color;
+
   &:before {
     content: '';
     position: absolute;
     @include gradient-background;
-    transition: 0.4s;
+    transition: $transition-duration ease;
     top: 0.5rem;
     bottom: 0.5rem;
     right: 0.5rem;
     left: 0.5rem;
     z-index: -1;
+    transform-origin: bottom left;
   }
 }
 
